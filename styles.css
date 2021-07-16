@@ -23,3 +23,15 @@
 }
 
 
+
+.sidebar > div >div{
+  padding: 10px 10px 10px 0px;
+}
+.sidebar > div >div:hover
+{
+  background-color:grey;
+  cursor: pointer;
+}
+
+
+
