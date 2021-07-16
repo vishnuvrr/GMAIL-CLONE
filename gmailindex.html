@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"> -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/66f3ad5a3c.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles.css">
+
+  <title>Gmail Clone</title>
+</head>
+<body>
+
+  <div class="container hidden" id="login">
+    <button id="authorize" class="btn btn-primary">Login</button>
+  </div>
+
+  <div class="gmail" id="gmail">
+
+    <div id="topbar">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-2 col-sm-4">
+            <i class="fas fa-envelope">Gmail</i>
+          </div>
+          <div class="col-md-10 col-sm-8" id="username">
+    
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="conatiner-fluid">
+      <div class="row">
+        <div class="col-md-2">
+          <div class="sidebar">
+            <div><button>Compose</button></div>
+            <div onclick="loadGmailApi()"><img src="icons/inbox.png">Inobx</div>
+            <div id="sent" onclick="sentMail()"><img src="icons/sent.png">Sent</div>
+            <div id="drafts" onclick="draftMail()"><img src="icons/drafts.png">Drafts</div>
+          </div>
+        </div>
+
+        <div class="col-md-10">
+          <div class="accordion" id="content">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+  <script src="https://apis.google.com/js/client.js?onload=handleClientLoad"></script>
+
+
+  
+</body>
+</html>

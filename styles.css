@@ -1,0 +1,25 @@
+#topbar
+{
+  padding:20px;
+  margin:5px 0px 20px 0px;
+}
+
+#topbar i{
+  font-size: 60px;
+}
+
+.sidebar
+{
+  padding: 10px;
+}
+
+.sidebar > div{
+  margin:20px;
+}
+
+.gmail
+{
+  display:none;
+}
+
+
