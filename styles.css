@@ -2,11 +2,20 @@
 {
   padding:20px;
   margin:5px 0px 20px 0px;
+  background-color: #141E61;
 }
 
 #topbar i{
   font-size: 60px;
+  color:#EEEEEE;
 }
+
+#username
+{
+  color:#EEEEEE;
+  font-size: medium;
+}
+
 
 .sidebar
 {
@@ -22,6 +31,23 @@
   display:none;
 }
 
+#login > h1
+{
+  padding-top: 50px;
+}
+
+.maildata
+{
+  text-align: center;
+}
+
+.labels > div > img{
+  padding-right: 10px;
+}
+
+.labels > div{
+  font-size: medium;
+}
 
 
 .sidebar > div >div{
@@ -29,7 +55,7 @@
 }
 .sidebar > div >div:hover
 {
-  background-color:grey;
+  background-color:#EEEEEE;
   cursor: pointer;
 }
 
